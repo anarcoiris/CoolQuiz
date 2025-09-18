@@ -1,0 +1,10 @@
+{
+  "Santi": {
+    "pool_default": 30,
+    "shuffle_q": true,
+    "shuffle_opts": true,
+    "auto_check": true,
+    "auto_save_on_check": true,
+    "use_sqlite": true
+  }
+}

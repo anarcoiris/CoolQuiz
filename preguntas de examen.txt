@@ -1,0 +1,1800 @@
+
+Ventajas de la virtualización
+¿Cuál es una de las ventajas principales de usar máquinas virtuales?
+Mayor consumo de hardware
+No permite restaurar en caso de fallos
+Depende de un único servidor físico
+*Separación del sistema operativo del hardware
+
+Conexión NAT
+En VirtualBox, ¿qué ocurre en el modo de red NAT?
+La VM no tiene acceso a Internet
+*La VM usa la IP del host y puede navegar a través de él
+La VM se conecta directamente con la red local
+Se limita solo a comunicación entre VMs
+
+Adaptador puente
+¿Cuál es la característica del modo 'Adaptador puente' en VirtualBox?
+Solo comunica VMs entre sí
+*La VM se comporta como otro equipo más en la red local
+Usa el mismo puerto que NAT
+No tiene acceso a direcciones IP
+
+Docker
+¿Qué es una imagen en Docker?
+Un archivo ISO del sistema operativo
+*Un paquete con aplicación, librerías y dependencias
+Un contenedor en ejecución
+Un registro público de contenedores
+
+Contenedores vs VMs
+¿Cuál es una diferencia clave entre contenedores y máquinas virtuales?
+Los contenedores incluyen todo un sistema operativo
+Las VMs son más ligeras que los contenedores
+*Los contenedores comparten el kernel del host
+Las VMs no consumen recursos del host
+
+Kubernetes
+¿Qué ventaja ofrece Kubernetes?
+Evita usar contenedores
+*Orquesta múltiples contenedores en miles de nodos
+Reemplaza a Docker
+Sirve solo para bases de datos
+
+Portainer
+¿Para qué sirve Portainer?
+Instalar máquinas virtuales
+*Gestionar contenedores Docker mediante interfaz gráfica
+Administrar redes VPN
+Analizar tráfico HTTP
+
+MySQL en Docker
+¿Qué puerto estándar utiliza MySQL en un contenedor?
+*3306
+22
+8080
+9443
+
+Dockerfile
+¿Qué permite hacer un Dockerfile?
+Ejecutar comandos dentro de un contenedor
+*Construir imágenes personalizadas de contenedores
+Levantar directamente un contenedor
+Crear redes virtuales
+
+Hello World Docker
+¿Qué comando ejecuta la imagen de prueba 'hello-world'?
+docker start hello-world
+docker install hello-world
+*docker run hello-world
+docker exec hello-world
+
+Wireshark básico
+¿Qué es Wireshark?
+Un antivirus
+*Un sniffer de paquetes de red
+Un editor de texto
+Un servidor web
+
+Encapsulación
+¿Qué protocolo encapsula finalmente todos los demás en Ethernet?
+*Trama (frame) Ethernet
+TCP
+IP
+HTTP
+
+
+Filtro en Wireshark
+¿Qué filtro debemos aplicar para ver solo tráfico HTTP?
+*http
+tcp
+ip
+get
+
+HTTP GET
+¿Qué significa el método HTTP GET?
+*Solicitud de un recurso al servidor
+Envío de datos al servidor
+Autenticación básica
+Cierre de conexión TCP
+
+Estado HTTP
+¿Qué significa el código HTTP 200 OK?
+Error de autenticación
+Recurso no encontrado
+*Solicitud completada con éxito
+Recurso modificado recientemente
+
+HTTP caché
+¿Qué significa el código HTTP 304 Not Modified?
+Recurso no disponible
+*El recurso no ha cambiado desde la última solicitud
+El servidor está caído
+Respuesta inválida
+
+Autenticación HTTP
+¿Qué ocurre con las credenciales en autenticación HTTP Basic?
+*Se envían en Base64 sin cifrar
+Se envían cifradas con TLS
+Nunca viajan por la red
+Solo se transmiten en UDP
+
+HTTP objetos embebidos
+¿Qué ocurre cuando un HTML contiene imágenes externas?
+El navegador las ignora
+*El navegador hace múltiples peticiones GET
+Se descargan en el mismo paquete
+Se bloquean por seguridad
+
+TCP Segmentación
+¿Por qué un archivo HTML largo se envía en varios paquetes?
+El servidor limita el tamaño
+*Porque el mensaje se fragmenta en varios segmentos TCP
+Se envía siempre en paralelo
+Por seguridad en HTTP
+
+Códigos HTTP
+¿Cuál es la respuesta inicial de un servidor protegido con Basic Auth?
+*401 Unauthorized
+304 Not Modified
+200 OK
+500 Internal Server Error
+
+Metasploitable
+¿Qué es Metasploitable?
+Un sistema operativo seguro
+*Una VM intencionalmente vulnerable para prácticas
+Un antivirus
+Un servidor web
+
+Kali Linux
+¿Cuál es una característica de Kali Linux?
+No incluye herramientas de seguridad
+*Trae preinstaladas herramientas de hacking ético
+Solo sirve para Windows
+No soporta scripting
+
+Nmap
+¿Para qué sirve Nmap?
+Editar bases de datos
+*Escanear redes y descubrir servicios
+Crear usuarios en Linux
+Ejecutar contenedores
+
+Inyección SQL
+¿Cuál es un ejemplo típico de inyección SQL?
+SELECT * FROM users
+DROP DATABASE test
+*' OR '1'='1
+GRANT ALL PRIVILEGES
+
+OWASP ZAP
+¿Qué es OWASP ZAP?
+Un sistema operativo
+*Un proxy para auditar seguridad web
+Un compilador de PHP
+Una base de datos relacional
+
+API login insegura
+¿Qué vulnerabilidad presenta el script login_inseguro.php?
+Uso de HTTPS
+*Permite inyección SQL por falta de validación
+Contraseñas largas
+Falta de puerto abierto
+
+Autenticación segura
+¿Qué mejora de seguridad puede usarse en el login?
+Usar solo usuario root
+*Autenticación multifactor (MFA)
+Enviar credenciales en texto plano
+Aceptar cualquier contraseña
+
+Hash inseguro
+¿Qué problema tiene usar MD5 para almacenar contraseñas?
+Es el más seguro
+*Es vulnerable a colisiones y ataques rápidos
+No funciona en PHP
+No permite autenticación
+
+SQLMap
+¿Qué hace la herramienta sqlmap?
+*Automatiza ataques de inyección SQL
+Configura contraseñas seguras
+Instala Docker
+Escanea redes locales
+
+Seguridad HTTP
+¿Por qué HTTP Basic Auth es inseguro sin HTTPS?
+Las contraseñas no viajan
+*Las credenciales viajan en texto base64 sin cifrar
+No permite usuarios múltiples
+No soporta cabeceras
+
+Aplicaciones monolíticas
+¿Cuál es una desventaja de los monolitos?
+Escalabilidad sencilla
+Mantenimiento fácil
+*Cambiar un componente requiere redistribuir toda la app
+Tienen menos dependencias
+
+Microservicios
+¿Qué ventaja tienen los microservicios?
+No permiten escalado
+*Módulos independientes y escalabilidad selectiva
+Se programan solo en Java
+Requieren un único servidor
+
+APIs
+¿Qué rol tienen las APIs en los microservicios?
+*Permitir comunicación estandarizada entre servicios
+Evitar integración de sistemas
+Eliminar seguridad en el sistema
+Bloquear protocolos HTTP
+
+Arquitectura multicapa
+¿Qué capa gestiona la interfaz con la base de datos?
+Capa de presentación
+*Capa de acceso a datos
+Capa de lógica de negocio
+Capa de usuario
+
+Capa de lógica de negocio
+¿Qué tarea puede gestionar esta capa?
+Mostrar la GUI
+*Autenticación multifactor
+Traducción de HTML
+Encapsulación TCP/IP
+
+Capa de presentación
+¿Qué característica tiene esta capa?
+Gestión de contraseñas
+*Interfaz gráfica para el usuario (frontend)
+Procesamiento de datos
+Gestión de la base de datos
+
+Programación asíncrona
+¿Qué tecnología permitió AJAX?
+*JavaScript asíncrono + XML/JSON
+PHP + SQL
+SMTP + FTP
+Java + JVM
+
+
+Escalado
+¿Qué diferencia el escalado en monolitos vs microservicios?
+En monolitos se escalan módulos específicos
+*En microservicios se escala solo el servicio necesario
+Ambos escalan igual
+Los monolitos no pueden escalar
+
+VPN
+¿Qué función cumple una VPN en arquitectura multicapa?
+Hacer más lento el tráfico
+*Crear una red privada segura sobre una red pública
+Eliminar protocolos de seguridad
+Compartir contraseñas
+
+
+MongoDB Compass
+¿Para qué se utiliza MongoDB Compass?
+Para crear bases de datos relacionales
+*Para gestionar y consultar MongoDB con una interfaz gráfica
+Para diseñar diagramas entidad-relación
+Para programar en Python
+
+Operadores de comparación
+¿Cuál de los siguientes operadores en MongoDB selecciona documentos con un valor mayor que otro?
+$eq
+$ne
+*$gt
+$lte
+
+Operadores lógicos
+¿Qué hace el operador $and en MongoDB?
+Devuelve documentos que no cumplen ninguna condición
+*Devuelve documentos donde todas las condiciones son verdaderas
+Devuelve el primer documento encontrado
+Invierte los valores de un campo
+
+Proyección
+¿Qué ocurre al usar una proyección {title: 1, date: 1} en una consulta?
+*Se muestran solo los campos title y date junto con _id
+Se eliminan los campos title y date
+Se devuelven todos los campos
+Se ordenan los resultados por date
+
+
+Actualización de arrays
+¿Qué operador agrega un elemento a un array sin duplicados?
+$push
+$pop
+$pull
+*$addToSet
+
+Agregaciones
+¿Qué operador de agregación permite calcular la suma de un campo en MongoDB?
+$match
+$project
+$avg
+*$sum
+
+Python y MongoDB
+¿Qué librería de Python se utilizó para conectar con MongoDB en la práctica?
+sqlalchemy
+mysql.connector
+*pymongo
+psycopg2
+
+1. Puerto seguro en Apache
+¿Cuál es el puerto por defecto para HTTPS en Apache?
+21
+80
+*443
+8443
+
+2. X.509
+¿Qué define el estándar X.509?
+Un formato para claves privadas
+*El formato de los certificados digitales
+Un comando de Apache
+Un puerto de red para HTTPS
+
+3. Fichero default-ssl.conf
+¿Qué directiva activa el motor SSL en Apache?
+AllowOverride All
+DocumentRoot
+*SSLEngine on
+Require all granted
+
+4. Docker Compose
+En el docker-compose de la práctica, ¿qué significa la línea `- "8443:443"`?
+Desactiva el SSL
+*Expone el puerto 443 del contenedor como 8443 en el host
+Cambia la contraseña del contenedor
+Ejecuta Apache en segundo plano
+
+5. Formato PEM
+¿Qué caracteriza al formato PEM?
+Es binario
+*Base64 con encabezados ----BEGIN
+Solo se usa en Java
+No puede contener claves privadas
+
+6. Certificados y seguridad
+¿Qué debe hacerse siempre con la clave privada de un certificado?
+Compartirla con el navegador
+*Mantenerla secreta y nunca compartir
+Subirla a Docker Hub
+Firmarla con ZAP
+
+7. Clave pública
+¿Dónde se debe pegar la clave pública para habilitar acceso SSH sin contraseña en Kali?
+/etc/passwd
+/etc/hosts
+*/home/usuario/.ssh/authorized_keys
+/etc/ssh/sshd_config
+
+
+8. Servicio SSH
+¿Qué comando reinicia el servicio SSH en Kali?
+service ssh restart
+systemctl enable ssh
+*systemctl restart ssh
+sudo restart-service ssh
+
+9. Configuración en PuTTY
+¿En qué apartado de PuTTY se carga la clave privada para conectar por SSH?
+Connection > Proxy
+*Connection > SSH > Auth
+Session > Logging
+Window > Translation
+
+10. Usuario en SSH
+¿Por qué se recomienda usar un usuario no root en SSH?
+Porque root no tiene permisos
+*Por seguridad, para evitar acceso directo como administrador
+Porque root no existe en Kali
+Para ahorrar memoria
+
+11. Conexión SSH
+Si todo está bien configurado, ¿qué ocurre al conectarse con PuTTY y clave privada?
+Se pide la contraseña del usuario
+Se rechaza la conexión
+*No se solicita contraseña
+Se abre solo en modo lectura
+
+12. Riesgo clave privada
+¿Qué ocurre si compartes tu clave privada SSH?
+Nada, es pública
+*Otros pueden acceder a tus servidores como si fueras tú
+Se bloquea automáticamente
+El servidor la cifra de nuevo
+
+
+RGPD ámbito de aplicación
+¿A qué tratamientos se aplica el Reglamento Europeo de Protección de Datos?
+Solo a tratamientos manuales
+Solo a datos financieros
+*Tratamiento automatizado y no automatizado destinados a ser incluidos en un fichero
+Solo a transferencias internacionales
+
+Definición de datos personales
+¿Qué se entiende por dato personal en el RGPD?
+*Información sobre una persona física identificada o identificable
+Cualquier dato de una empresa
+Información anónima
+Un dato económico agregado
+
+Datos especialmente protegidos
+¿Cuáles son ejemplos de datos especialmente protegidos?
+*Salud, orientación sexual, origen racial
+Correo electrónico corporativo
+Dirección postal
+Edad y género
+
+Responsable del tratamiento
+¿Quién es el responsable del tratamiento según el RGPD?
+El que paga el servicio de cloud
+*Persona o entidad que determina fines y medios del tratamiento
+El encargado técnico
+La autoridad de control
+
+Encargado del tratamiento
+¿Quién es el encargado del tratamiento?
+*Persona o entidad que trata datos por cuenta del responsable
+El usuario que entrega sus datos
+El DPD
+Un proveedor de Internet
+
+Delegado de Protección de Datos (DPD)
+¿Cuál es una de las funciones principales del DPD?
+Emitir sanciones
+*Asesorar y supervisar el cumplimiento de la normativa
+Firmar contratos
+Eliminar datos personales
+
+Principios fundamentales RGPD
+¿Cuál es un principio clave del tratamiento de datos?
+Tratarlos indefinidamente
+*Minimización de datos
+Transferir sin control
+Oposición automática
+
+Derecho de acceso
+¿Qué incluye el derecho de acceso a datos?
+Ninguna información
+*Conocer fines, categorías, plazos y origen de los datos
+Modificar registros de otros usuarios
+Solicitar compensación económica
+
+Derecho de supresión
+¿Cuándo puede un interesado solicitar la supresión de sus datos?
+Cuando los necesite otra empresa
+*Cuando ya no sean necesarios para el fin recogido o retire su consentimiento
+Siempre que lo desee sin condiciones
+Cuando lo indique el DPD
+
+Limitación del tratamiento
+¿Qué implica la limitación del tratamiento?
+*Suspensión temporal o definitiva sin eliminación de datos
+Eliminar todos los registros
+Publicar los datos
+Transferirlos al DPD
+
+Seguridad del tratamiento
+¿Cuál es una medida adecuada según el RGPD?
+Publicar contraseñas
+*Seudonimización y cifrado de datos
+Compartir claves privadas
+Transferir datos sin control
+
+Notificación de brechas
+¿Cuál es el plazo para notificar a la autoridad una violación de datos?
+Una semana
+*72 horas
+Un mes
+24 horas
+
+Régimen sancionador
+¿Cuál puede ser la sanción máxima por infracciones graves al RGPD?
+100.000 €
+1 millón €
+*20 millones € o el 4% de la facturación
+Una multa simbólica
+
+Videovigilancia
+¿Qué limita la normativa en sistemas de videovigilancia?
+Poder grabar todo el espacio público
+*Captar solo lo imprescindible, nunca domicilios privados
+Grabar en secreto en espacios laborales
+Guardar imágenes sin límite de tiempo
+
+Derechos digitales LOPD
+¿Cuál es un derecho digital reconocido?
+Acceso a televisión pública
+*Derecho a la desconexión digital en el ámbito laboral
+Derecho a navegar sin publicidad
+Derecho a usar cualquier red social
+
+Confidencialidad
+¿Qué significa la confidencialidad en ciberseguridad?
+Que los datos siempre se borren
+*Solo usuarios autorizados acceden a la información
+Que los datos estén disponibles siempre
+Que los datos no se alteren
+
+Triángulo CIA
+¿Cuáles son los tres pilares de la seguridad de la información?
+Control, Integración, Acceso
+*Confidencialidad, Integridad, Disponibilidad
+Conectividad, Inteligencia, Autenticación
+Coste, Inmediatez, Adaptabilidad
+
+Phishing
+¿Qué caracteriza a un ataque de phishing?
+*Engaño para obtener credenciales simulando ser alguien legítimo
+Un virus que se replica
+Acceso físico a servidores
+Un ataque DoS
+
+Ransomware
+¿Qué hace un ransomware?
+*Secuestra datos cifrándolos y pide rescate
+Infecta vía USB
+Inicia sesión como administrador
+Borra todos los discos automáticamente
+
+Vulnerabilidad
+¿Qué es una vulnerabilidad?
+Una amenaza externa
+*Debilidad en un sistema que puede ser explotada
+Una copia de seguridad
+Un firewall
+
+Amenaza
+¿Qué es una amenaza en ciberseguridad?
+Un dato cifrado
+*Circunstancia que puede afectar negativamente a un activo
+Un error corregido
+Un antivirus
+
+Riesgo
+¿Cómo se define el riesgo en ciberseguridad?
+*Probabilidad de que una amenaza explote una vulnerabilidad causando impacto
+Cantidad de usuarios conectados
+Un antivirus no actualizado
+Nivel de permisos en Windows
+
+Malware
+¿Cuál de los siguientes es un ejemplo de troyano?
+*Programa que aparenta ser legítimo pero contiene código malicioso
+Virus que se replica en la RAM
+Herramienta de seguridad
+Sistema operativo Linux
+
+Gusano
+¿Qué diferencia a un gusano de un virus?
+*Se propaga por la red sin intervención del usuario
+Necesita siempre un ejecutable
+No se replica
+Es inofensivo
+
+Botnet
+¿Qué es una botnet?
+Una aplicación legítima
+*Red de equipos infectados controlados remotamente
+Una VPN
+Un firewall avanzado
+
+Ingeniería social
+¿Qué persigue un ataque de ingeniería social?
+*Ceder información mediante engaño
+Modificar datos en tránsito
+Atacar routers
+Probar contraseñas por fuerza bruta
+
+VPN
+¿Qué ventaja aporta una VPN?
+Evitar pagar licencias
+*Crear un túnel cifrado para comunicaciones seguras
+Eliminar todos los virus
+Navegar más rápido
+
+IPS/IDS
+¿Cuál es la diferencia entre IDS e IPS?
+*IDS detecta intrusiones, IPS detecta y bloquea
+IDS cifra datos, IPS descifra
+IDS se usa en usuarios, IPS en servidores
+Ninguna
+
+SIEM
+¿Qué función principal tiene un SIEM?
+*Centralizar y analizar eventos de seguridad para detectar ataques
+Crear copias de seguridad
+Proteger contraseñas en Windows
+Borrar malware automáticamente
+
+SGSI
+¿Cuál es el objetivo de un Sistema de Gestión de Seguridad de la Información (SGSI)?
+*Asegurar la información mediante un ciclo de mejora continua
+Instalar antivirus
+Reducir el gasto en servidores
+Eliminar contraseñas de usuarios
+
+
+ElasticSearch
+¿Qué es ElasticSearch dentro del stack ELK?
+Un sistema de bases de datos SQL
+*Un motor de búsqueda y análisis basado en Lucene
+Un editor de dashboards
+Un orquestador de contenedores
+
+Kibana
+¿Para qué se utiliza Kibana en el stack ELK?
+Para indexar datos
+Para administrar usuarios
+*Para visualizar y explorar datos de ElasticSearch
+Para ejecutar scripts de Python
+
+
+Bulk API
+¿Qué permite hacer la Bulk API de ElasticSearch?
+Ejecutar consultas en Cypher
+*Insertar o actualizar múltiples documentos en una sola petición
+Cargar dashboards en Kibana
+Configurar la seguridad de ElasticSearch
+
+Query DSL
+¿Qué es Query DSL en ElasticSearch?
+Un lenguaje de scripting en Python
+Un lenguaje SQL adaptado a ElasticSearch
+*Un lenguaje de consultas basado en JSON para búsquedas y agregaciones
+Un editor visual de consultas
+
+Operador match
+¿Qué hace la consulta {"match":{"text":"quijote"}}?
+Busca documentos que no contienen la palabra 'quijote'
+Busca coincidencias exactas en el campo 'text'
+*Busca documentos donde 'text' contenga 'quijote'
+Borra documentos que contienen 'quijote'
+
+Discover
+¿Qué permite hacer el módulo Discover de Kibana?
+Ejecutar scripts de Python
+*Explorar documentos y aplicar filtros de forma gráfica
+Ejecutar agregaciones por categorías
+Crear índices nuevos
+
+
+
+Neo4j Browser
+¿Para qué sirve el puerto 7474 en Neo4j?
+Para conexiones de Python
+Para conexiones con bases de datos SQL
+Para ejecutar algoritmos de grafos
+*Para acceder al Neo4j Browser vía web
+
+Lenguaje Cypher
+¿Cuál es el lenguaje de consultas de Neo4j?
+SQL
+*Cypher
+CQL
+Gremlin
+
+
+Consulta Tom Hanks
+¿Qué devuelve la consulta MATCH (p:Person {name:'Tom Hanks'}) RETURN p?
+Una película llamada Tom Hanks
+*El nodo de persona con nombre Tom Hanks
+Todos los actores que actuaron con Tom Hanks
+El director de Tom Hanks
+
+Shortest Path
+¿Qué calcula la función shortestPath en Cypher?
+El número de películas por género
+*El camino más corto entre dos nodos
+La cantidad de compras por cliente
+La duración total de un grafo
+
+Integración Python
+¿Qué librería de Python se utiliza para conectar con Neo4j?
+sqlalchemy
+*neo4j
+pymongo
+psycopg2
+
+Consulta Cloud Atlas
+¿Cómo encontrar quién dirigió la película 'Cloud Atlas'?
+MATCH (m:Movie {title:'Cloud Atlas'}) RETURN m
+*MATCH (m:Movie {title:'Cloud Atlas'})<-[:DIRECTED]-(d) RETURN d.name
+MATCH (p:Person {name:'Cloud Atlas'}) RETURN p
+MATCH (m:Movie)-[:ACTED_IN]->(p) RETURN m
+
+
+
+Definición de base de datos
+¿Qué es una base de datos según la RAE?
+Un conjunto de programas de ordenador
+Un conjunto de datos sin relación
+Un sistema operativo
+*Conjunto de datos organizado para obtener información rápidamente
+
+Datos vs Información
+¿Qué diferencia principal hay entre datos e información?
+Los datos siempre son numéricos y la información textual
+Los datos son organizados y la información desorganizada
+*Los datos son valores en bruto, la información aporta contexto y significado
+Son exactamente lo mismo
+
+SGBD
+¿Qué es un SGBD?
+Un sistema operativo especializado
+Un lenguaje de programación
+*Un software que permite crear y mantener bases de datos
+Un modelo de entidad-relación
+
+Lenguajes del SGBD
+¿Qué sublenguajes se distinguen en un SGBD?
+SQL y NoSQL
+CRUD y REST
+*LDD y LMD
+DDL y CAP
+
+Propiedades ACID
+¿Qué propiedad ACID asegura que una transacción completa se mantiene aunque falle el sistema?
+Atomicidad
+Consistencia
+Aislamiento
+*Durabilidad
+
+Modelo E-R
+¿Qué representa el modelo Entidad-Relación?
+Una forma de organizar consultas SQL
+*Una forma gráfica de representar datos y sus relaciones
+Un esquema de transacciones
+Un tipo de base de datos NoSQL
+
+Cardinalidad
+¿Qué significa una relación 1:N en un modelo entidad-relación?
+*Una entidad A puede asociarse con varias entidades B
+Una entidad A solo puede asociarse con una B
+Varias entidades A pueden asociarse con varias B
+No existe relación entre entidades
+
+Consultas SQL
+¿Qué hace la consulta SELECT * FROM Customers WHERE Country='Mexico'?
+Elimina clientes de México
+*Devuelve todos los clientes que viven en México
+Actualiza clientes de México
+Crea una tabla nueva
+
+Operaciones CRUD
+¿Cuál de las siguientes operaciones pertenece al paradigma CRUD?
+Renderizar
+*Crear
+Unir
+Desplegar
+
+Big Data
+¿Qué son las 5 V del Big Data?
+Valor, Variables, Validación, Velocidad, Volumen
+*Volumen, Velocidad, Variedad, Veracidad, Valor
+Variables, Validación, Vínculos, Valor, Variedad
+Visibilidad, Variedad, Valor, Versionado, Velocidad
+
+Necesidad de Big Data
+¿Qué factor NO está asociado al auge del Big Data?
+Internet de las cosas (IoT)
+Digitalización de empresas
+*Menor generación de datos
+Redes sociales
+
+Escalado
+¿Qué diferencia hay entre escalado vertical y horizontal?
+Vertical: añadir más máquinas. Horizontal: servidores más potentes
+*Vertical: servidores más potentes. Horizontal: añadir más máquinas
+Son lo mismo
+Horizontal siempre es más caro
+
+Teorema CAP
+¿Qué tres propiedades define el teorema CAP?
+Consistencia, Atomicidad, Persistencia
+*Consistencia, Disponibilidad, Tolerancia a partición
+Conexión, Almacenamiento, Procesado
+Carga, Adaptabilidad, Particionado
+
+Sistemas de información
+¿Qué caracteriza a los sistemas transaccionales (ST)?
+Generan informes predictivos
+Analizan grandes volúmenes de datos
+*Se basan en transacciones ACID y son rápidos y fiables
+Solo trabajan con datos no estructurados
+
+Motivación NoSQL
+¿Por qué surgió el modelo NoSQL?
+Para mejorar las consultas JOIN
+*Para superar las limitaciones de SQL en volumen, velocidad y variedad
+Para sustituir al lenguaje SQL
+Para simplificar las transacciones ACID
+
+Características NoSQL
+¿Cuál de estas NO es característica de NoSQL?
+Flexibilidad de esquemas
+Escalabilidad horizontal
+*Soporte nativo ACID completo
+Alto rendimiento
+
+Tipos de datos
+¿Qué son los datos semiestructurados?
+Datos en texto libre sin etiquetas
+Datos en tablas rígidas con esquema
+*Datos con estructura flexible como JSON o XML
+Datos estrictamente numéricos
+
+
+Documentales
+¿Qué formato se usa comúnmente en bases de datos documentales?
+CSV
+TXT
+*JSON/BSON
+SQL
+
+Columnar
+¿Qué caracteriza a las bases de datos por columnas?
+Guardan registros completos en cada fila
+Guardan solo documentos JSON
+*Guardan valores por columnas en lugar de filas
+No tienen índices
+
+Grafos
+¿Qué elemento representa una relación en bases de datos en grafo?
+Un nodo
+Un campo
+*Una flecha
+Un índice
+
+Ventajas clave-valor
+¿Cuál es una ventaja de las bases clave-valor como Redis?
+*Alta velocidad y escalabilidad ideales para cache
+Soporte nativo a JOINs complejos
+Lenguaje SQL completo
+Estructura rígida
+
+Ventajas documentales
+¿Qué ventaja ofrece MongoDB?
+Esquema fijo obligatorio
+*Consultas basadas en JSON dinámico
+Solo soporta texto plano
+No soporta replicación
+
+Columnar uso
+¿En qué escenario son ideales las bases de datos por columnas como Cassandra?
+En tablas pequeñas con pocas filas
+*En consultas masivas sobre columnas específicas
+En datos multimedia
+En datos no relacionados
+
+Grafos ventaja
+¿Qué ventaja tienen las bases en grafo?
+Evitan almacenar relaciones
+*Almacenan relaciones como entidades de primera clase
+No usan teoría de grafos
+Son las más rápidas siempre
+
+Tipos NoSQL
+¿Cuál de estas categorías NO pertenece a NoSQL?
+Clave-valor
+Documentales
+Columnar
+*Relacionales
+
+MongoDB
+¿Qué formato de almacenamiento usa MongoDB internamente?
+CSV
+XML
+*BSON
+YAML
+
+MongoDB Sharding
+¿Qué permite el sharding en MongoDB?
+Replicar colecciones
+*Particionar horizontalmente los datos
+Ejecutar consultas SQL
+Evitar índices
+
+CQL
+¿Qué es CQL en Cassandra?
+Un lenguaje para grafo
+*Un lenguaje similar a SQL para consultas
+Un modelo de replicación
+Un sistema de logs
+
+Neo4j
+¿Qué lenguaje de consultas usa Neo4j?
+SQL
+*Cypher
+CQL
+MapReduce
+
+Neo4j nodos
+¿Qué representan los nodos en Neo4j?
+Relaciones
+Consultas
+*Entidades
+Claves primarias
+
+Comparación MongoDB-SQL
+¿Qué equivale a una tabla en MongoDB?
+*Una colección
+Un documento
+Un campo
+Un índice
+
+Contenedor NameNode
+¿Qué comando permite abrir una terminal interactiva dentro del contenedor namenode?
+docker run namenode
+docker bash namenode
+*docker exec -it namenode /bin/bash
+docker start namenode
+
+Opción -it
+¿Qué significan las opciones -it en el comando docker exec?
+-i: instalar software, -t: transferir datos
+*-i: interactivo, -t: asigna terminal TTY
+-i: iniciar contenedor, -t: testear comandos
+-i: importar datos, -t: traducir
+
+Crear carpeta en HDFS
+¿Qué comando crea una carpeta en HDFS en la práctica?
+hdfs dfs -put
+*hdfs dfs -mkdir -p
+hdfs dfs -ls
+hdfs dfs -cat
+
+Subir archivos a HDFS
+¿Qué comando se usó para subir archivos desde el contenedor a HDFS?
+*hdfs dfs -put /tmp/input/* /input
+docker cp ./input namenode:/input
+hdfs dfs -ls /input
+hdfs dfs -get /input
+
+Archivo de resultados
+¿Qué comando permite traer los resultados del output de HDFS al contenedor local?
+hdfs dfs -put /output /tmp
+hdfs dfs -cp /output /tmp
+*hdfs dfs -get /output/part-r-00000 /tmp/resultado.txt
+docker cp /output namenode:/tmp
+
+
+Prueba trivial
+¿Qué comando permite mostrar el contenido de los resultados de salida en HDFS?
+*hdfs dfs -cat /output_basico/*
+hdfs dfs -ls /output_basico
+hdfs dfs -put /output_basico
+hdfs dfs -edit /output_basico
+
+
+
+
+Scala y JVM
+¿Sobre qué máquina virtual se ejecuta Scala?
+CLR de .NET
+*JVM (Java Virtual Machine)
+Python VM
+Ninguna, es compilado nativo
+
+
+Herramienta sbt
+¿Qué es sbt en Scala?
+*Un gestor de dependencias y build tool para Scala
+Un sistema de bases de datos
+Un compilador de SparkSQL
+Un módulo de Hadoop
+
+Extensión Metals
+¿Para qué sirve la extensión Metals en VSCode?
+Compilar código SQL
+*Soporte de desarrollo Scala (autocompletado, importación de dependencias)
+Gestionar contenedores Docker
+Visualizar gráficos
+
+
+Airbnb consultas
+¿Qué instrucción SQL obtiene el precio máximo en el dataset Airbnb?
+SELECT price FROM airbnb
+*SELECT MAX(price) AS max_price FROM airbnb
+SELECT * FROM airbnb WHERE price=9000
+SELECT COUNT(price) FROM airbnb
+
+DataFrame API
+¿Qué método de DataFrame permite agrupar por vecindario y calcular promedio de precio?
+*df.groupBy("neighbourhood").agg(avg("price"))
+df.filter(price<150).count()
+df.select(max("price"))
+df.join(neighbourhood)
+
+
+
+
+Kafka entorno
+¿Qué servicio necesita Kafka para coordinar brokers y particiones?
+MySQL
+*Zookeeper
+Elasticsearch
+Kibana
+
+
+Producer
+¿Qué hace el script producer.py en la práctica?
+Consume mensajes de Kafka
+*Envía tweets desde la API de Twitter a un topic Kafka
+Crea dashboards en Kibana
+Procesa datos con Spark
+
+Consumer
+¿Qué hace el script consumer.py en la práctica?
+Envía tweets a la API de Twitter
+*Lee tweets desde Kafka y los guarda en Elasticsearch
+Crea un topic en Kafka
+Configura Zookeeper
+
+Bearer Token
+¿Qué es el BEARER_TOKEN en producer.py?
+Un identificador de Kafka
+*Una clave para acceder a la API de Twitter
+Una contraseña de Elasticsearch
+Un puerto de Docker
+
+Kibana
+¿Para qué se usó Kibana en la práctica de Kafka-Twitter?
+Para enviar tweets
+*Para visualizar tweets almacenados en Elasticsearch
+Para crear topics en Kafka
+Para autenticar en Twitter
+
+
+Tablas externas
+¿Qué diferencia a una tabla EXTERNAL en Hive?
+Copia los datos a Hive
+*Los datos permanecen en HDFS y Hive solo referencia su ubicación
+Solo permite JSON
+No soporta CSV
+
+Consultas Hive
+¿Qué instrucción SQL se usó para obtener el precio máximo en Hive?
+SELECT price FROM airbnb;
+*SELECT MAX(CAST(price AS INT)) FROM airbnb;
+SELECT * FROM airbnb WHERE price > 9000;
+SELECT COUNT(*) FROM airbnb;
+
+
+Carga CSV PySpark
+¿Qué instrucción carga el CSV de Airbnb en PySpark?
+spark.load('airbnb.csv')
+*spark.read.csv('hdfs:///datasets/airbnb.csv', header=True, inferSchema=True, sep=';')
+LOAD DATA INPATH '/datasets/airbnb.csv' INTO TABLE airbnb
+df = pandas.read_csv('airbnb.csv')
+
+Consultas PySpark
+¿Qué instrucción devuelve el número de apartamentos de menos de 150€?
+df.count(price<150)
+*df.where(col('price') < 150).select(count('*')).show()
+df.filter('price<150').sum()
+df.query('price<150').count()
+
+
+
+Definición Hadoop
+¿Qué es Hadoop?
+Un sistema operativo distribuido
+*Un proyecto open source para almacenamiento y procesamiento distribuido de grandes volúmenes de datos
+Una base de datos relacional
+Un lenguaje de programación
+
+Componentes Hadoop
+¿Cuáles son los tres componentes principales de Hadoop clásico?
+*HDFS, MapReduce, Hadoop Common
+YARN, Spark, Hive
+Pig, Hive, Oozie
+Flume, Sqoop, HBase
+
+HDFS
+¿Qué es HDFS?
+Un motor de consultas SQL
+*Un sistema de archivos distribuido y tolerante a fallos
+Un lenguaje de programación
+Una librería de Machine Learning
+
+MapReduce
+¿Qué hacen las fases Map y Reduce en Hadoop?
+Map: combina resultados; Reduce: asigna claves
+*Map: divide datos en pares clave-valor; Reduce: agrega y resume valores por clave
+Map: almacena en HDFS; Reduce: borra duplicados
+Map: ordena datos; Reduce: los transforma en JSON
+
+JobTracker
+¿Qué rol tenía el JobTracker en Hadoop 1.0?
+Asignar bloques en HDFS
+*Coordinar y asignar tareas Map y Reduce
+Replicar bloques de datos
+Ejecutar consultas SQL
+
+YARN
+¿Qué aporta YARN en Hadoop 2.0?
+Un nuevo formato de datos
+*Gestión de recursos y aplicaciones en paralelo
+Sustitución de HDFS
+Un lenguaje declarativo
+
+Hive
+¿Qué permite Hive sobre Hadoop?
+*Consultas SQL sobre datos almacenados en HDFS
+Procesamiento de grafos
+Entrenamiento de modelos ML
+Almacenamiento en memoria
+
+Sqoop
+¿Qué función cumple Sqoop en Hadoop?
+Mover logs de servidores a HDFS
+*Importar y exportar datos entre bases relacionales y Hadoop
+Ejecutar algoritmos de grafos
+Gestionar contenedores
+
+
+Definición Spark
+¿Qué es Apache Spark?
+Un sistema de ficheros
+*Un motor de procesamiento distribuido en memoria
+Una base de datos documental
+Un compilador de Scala
+
+Spark vs MapReduce
+¿Qué ventaja clave tiene Spark frente a MapReduce?
+Mayor tolerancia a fallos
+Procesa todo en disco
+*Procesa en memoria, más rápido
+No necesita cluster
+
+SparkContext
+¿Qué es SparkContext?
+Un gestor de archivos
+*La puerta de entrada a Spark que coordina procesos y RDDs
+Un motor de grafos
+Un planificador de YARN
+
+RDD
+¿Qué es un RDD en Spark?
+Un DataFrame SQL
+*Un conjunto de registros distribuidos, inmutables y tolerantes a fallos
+Un script de Python
+Un job de Hadoop
+
+Transformaciones RDD
+¿Qué diferencia hay entre transformaciones y acciones en RDDs?
+Las transformaciones devuelven valores y las acciones nuevos RDDs
+*Las transformaciones son perezosas y crean nuevos RDDs; las acciones ejecutan y devuelven resultados
+Ambas son inmediatas
+Solo existen en DataFrames
+
+Spark SQL
+¿Qué permite Spark SQL?
+*Ejecutar consultas SQL sobre DataFrames distribuidos
+Procesar grafos
+Simular MapReduce
+Conectar con Neo4j
+
+MLlib
+¿Qué es MLlib en Spark?
+Un motor de bases NoSQL
+*Una librería de Machine Learning distribuido
+Un compilador de Python
+Una API para grafos
+
+
+Persistencia
+¿Qué permite la función cache() en Spark?
+Eliminar RDDs
+Guardar RDDs en disco
+*Persistir un RDD en memoria para reutilizarlo
+Convertir un RDD en SQL
+
+Definición Kafka
+¿Qué es Apache Kafka?
+*Un sistema de mensajería distribuida en tiempo real
+Una base de datos documental
+Un lenguaje de programación
+Un módulo de Spark
+
+Componentes Kafka
+¿Qué son los brokers en Kafka?
+Clientes que consumen mensajes
+*Servidores que almacenan y replican mensajes en el clúster
+Productores que generan datos
+Usuarios de Zookeeper
+
+Topic
+¿Qué es un topic en Kafka?
+Un archivo de configuración
+*Un canal lógico donde se agrupan mensajes
+Un nodo de Spark
+Un dataset
+
+Particiones Kafka
+¿Qué ventaja aporta dividir un topic en particiones?
+*Permitir paralelismo y escalabilidad en el consumo de mensajes
+Evitar la replicación
+Eliminar mensajes duplicados
+Reducir latencia de red
+
+Productores y consumidores
+¿Qué hacen los productores en Kafka?
+*Envían mensajes a topics
+Procesan mensajes recibidos
+Almacenan datos en HDFS
+Ejecutan MapReduce
+
+
+Integración con Spark
+¿Cómo se integran Kafka y Spark Streaming?
+*Kafka envía datos en tiempo real que Spark Streaming procesa
+Spark ejecuta consultas SQL sobre Kafka
+Kafka almacena datos de RDD
+No existe integración
+
+Casos de uso Kafka
+¿Cuál de estos NO es un caso típico de Kafka?
+Procesamiento de logs
+Monitorización en tiempo real
+*Entrenamiento de redes neuronales profundas
+Integración de sistemas distribuidos
+
+
+Definición BI
+¿Qué es Business Intelligence (BI)?
+Un sistema operativo de Microsoft
+*Un conjunto de metodologías y herramientas para transformar datos en información útil
+Un lenguaje de programación para big data
+Una base de datos NoSQL
+
+Objetivos visualización
+¿Cuáles son los dos grandes objetivos de la visualización de datos?
+*Analizar y comunicar
+Probar y almacenar
+Cifrar y descifrar
+Conectar y exportar
+
+Beneficios BI
+¿Cuál de los siguientes es un beneficio del BI?
+Más redundancia en datos
+*Toma de decisiones fundamentada
+Evitar toda comunicación
+Aumentar el volumen sin control
+
+Herramientas generalistas
+¿Cuál de las siguientes es una herramienta generalista de visualización de datos?
+CARTO
+QGIS
+*Tableau
+Gephi
+
+Herramientas específicas
+¿Cuál es un ejemplo de herramienta específica de visualización?
+Qlik
+Power BI
+*Gephi
+Tableau
+
+Tipos de visualización
+¿Qué característica tiene una buena visualización?
+Mostrar toda la información disponible
+*Elegir el gráfico más adecuado para los datos y la audiencia
+Incluir colores llamativos sin importar el contenido
+Evitar el contexto de los datos
+
+Storytelling
+¿Qué es storytelling en visualización de datos?
+Crear gráficos animados
+*Contar una historia con los datos
+Mezclar datos con vídeos
+Usar solo tablas dinámicas
+
+Location Intelligence
+¿Qué implica el Location Intelligence?
+Analizar la seguridad de contraseñas
+*Usar datos de localización geográfica para análisis y decisiones
+Analizar logs de servidores
+Procesar lenguaje natural
+
+Power BI Desktop
+¿Qué es Power BI Desktop?
+Una versión online de Power BI
+*La aplicación local para diseñar y publicar informes
+El servicio SaaS de Power BI
+Un plugin de Excel
+
+Power Query
+¿Qué permite hacer Power Query en Power BI?
+Ejecutar scripts SQL en Hadoop
+*Limpiar, seleccionar y transformar datos
+Crear dashboards directamente
+Administrar usuarios
+
+Direct Query
+¿Qué ventaja tiene Direct Query en Power BI?
+*Permite trabajar sin descargar grandes volúmenes de datos
+Copia todos los datos al equipo local
+No permite conexiones en tiempo real
+Elimina la necesidad de relaciones
+
+
+Visualizaciones interactivas
+¿Qué permite la interacción en las visualizaciones de Power BI?
+Cambiar el color del gráfico
+*Actualizar automáticamente otros gráficos al seleccionar uno
+Guardar datos en HDFS
+Transformar el dataset
+
+Segmentador
+¿Qué hace el objeto Segmentador en Power BI?
+*Filtrar datos de forma visual con botones o sliders
+Conectar con Spark
+Crear relaciones entre tablas
+Ejecutar scripts de Python
+
+Relaciones entre tablas
+¿Qué se necesita para que Power BI cruce datos de distintas tablas?
+Que tengan el mismo número de filas
+*Que se creen relaciones entre claves
+Que todas sean CSV
+Que no tengan nulos
+
+Tooltip personalizado
+¿Qué es un tooltip en Power BI?
+Un filtro global
+*Una hoja oculta que muestra información contextual al pasar el ratón
+Un tipo de gráfico circular
+Un dataset adicional
+
+
+Quick Insights
+¿Qué hace la función Quick Insights en Power BI?
+Genera automáticamente dashboards
+*Busca patrones en los datos de forma automática
+Optimiza el rendimiento de consultas SQL
+Transforma datos en Hadoop
+
+
+Definición de proyecto
+Según PMBOK, ¿qué es un proyecto?
+*Un esfuerzo temporal para crear un producto, servicio o resultado único
+Una actividad repetitiva sin fin
+Un conjunto de operaciones continuas
+Un equipo de trabajo fijo
+
+Triángulo de proyectos
+¿Cuáles son las tres restricciones clásicas del triángulo de proyectos?
+Tiempo, coste y calidad
+*Alcance, tiempo y coste
+Recursos, calidad y marketing
+Equipo, procesos y resultados
+
+Project manager
+¿Cuál es la principal responsabilidad del project manager?
+Programar reuniones
+Supervisar exclusivamente el presupuesto
+*Coordinar y guiar al equipo para lograr los objetivos del proyecto
+Definir la estrategia empresarial
+
+Gobernanza
+¿Qué es la gobernanza en gestión de proyectos?
+Un conjunto de artefactos de software
+*El modelo de órganos y procesos de decisión y supervisión de un proyecto
+El conjunto de métricas financieras
+La distribución física de los equipos
+
+Programas y portfolios
+¿Qué diferencia un programa de un portfolio?
+*El programa agrupa proyectos relacionados; el portfolio integra programas y proyectos estratégicos
+El portfolio siempre es más pequeño
+El programa incluye tareas sin proyectos
+El portfolio es un documento, no una agrupación
+
+Stakeholders
+¿Qué son los stakeholders?
+Los empleados de la empresa
+*Individuos u organizaciones afectados o que pueden afectar al proyecto
+Los directivos financieros
+Los programadores del proyecto
+
+Dominios PMI
+¿Cuál NO es un dominio de desempeño en gestión de proyectos?
+Stakeholders
+Planificación
+Métricas
+*Virtualización
+
+Artefactos
+¿Qué es un acta de constitución del proyecto?
+Un informe financiero
+*Un documento que autoriza formalmente el inicio del proyecto
+Un contrato de proveedores
+Un backlog de tareas
+
+WBS/EDT
+¿Qué representa la Estructura de Desglose del Trabajo (EDT/WBS)?
+Un cronograma de pagos
+*La descomposición jerárquica del trabajo y entregables
+Un backlog de producto
+Un informe de métricas
+
+Líneas base
+¿Qué es la línea base de un proyecto?
+*La versión aprobada de alcance, cronograma y costes contra la que se mide el rendimiento
+Un informe semanal
+Una lista de interesados
+Un registro de riesgos
+
+Valor planificado
+¿Qué significa PV (Planned Value) en gestión de valor ganado?
+El coste real hasta la fecha
+*El valor presupuestado del trabajo planificado hasta un momento dado
+El valor real del trabajo ejecutado
+La estimación al concluir
+
+Valor ganado
+¿Qué significa EV (Earned Value)?
+El coste incurrido hasta la fecha
+*El valor presupuestado del trabajo realmente ejecutado
+El coste planificado de todo el proyecto
+El valor de mercado del proyecto
+
+Coste real
+¿Qué representa AC (Actual Cost)?
+El coste estimado final
+*El coste realmente incurrido hasta un momento dado
+El coste planificado de tareas futuras
+El valor de los entregables
+
+SV
+¿Cómo se calcula la variación del cronograma (SV)?
+*SV = EV - PV
+SV = PV - AC
+SV = BAC - EAC
+SV = EV / PV
+
+CV
+¿Cómo se calcula la variación de coste (CV)?
+*CV = EV - AC
+CV = AC - EV
+CV = PV - AC
+CV = EV / AC
+
+SPI
+¿Qué mide el Schedule Performance Index (SPI)?
+*La eficiencia en el tiempo = EV/PV
+La variación de costes
+La holgura total
+El ratio EV/AC
+
+CPI
+¿Qué mide el Cost Performance Index (CPI)?
+EV/PV
+*EV/AC
+BAC/EV
+SPI*EV
+
+EAC
+¿Qué significa Estimate at Completion (EAC)?
+El coste real del proyecto hasta la fecha
+*La estimación del coste final si se mantiene el rendimiento actual
+El presupuesto original del proyecto
+El cronograma final
+
+TCPI
+¿Qué indica el To Complete Performance Index (TCPI)?
+*El nivel de eficiencia requerido a partir de ahora para cumplir los objetivos de coste
+La desviación del cronograma
+El margen de beneficio
+El valor presente neto
+
+Interpretación valor ganado
+Si SPI < 1 y CPI < 1, ¿qué indica?
+Proyecto adelantado y bajo presupuesto
+*Proyecto retrasado y con sobrecoste
+Proyecto adelantado y con sobrecoste
+Proyecto retrasado pero bajo presupuesto
+
+Camino crítico
+¿Qué es el camino crítico de un proyecto?
+La secuencia de tareas con holgura positiva
+*La secuencia de tareas cuya demora retrasa la fecha final del proyecto
+El conjunto de tareas menos importantes
+Las tareas que se ejecutan en paralelo
+
+Holgura
+Si una tarea tiene holgura = 0, significa que...
+Es una tarea secundaria
+*Pertenece al camino crítico
+Se puede retrasar sin afectar al proyecto
+Debe eliminarse
+
+PERT
+¿Qué fórmula se usa en la técnica PERT para calcular la duración esperada?
+(O + M + P)/3
+*(O + 4M + P)/6
+(O + P)/2
+M + (P-O)
+
+Agile
+¿Cuál de estos NO es un valor del Manifiesto Ágil?
+Individuos e interacciones sobre procesos y herramientas
+Software funcionando sobre documentación exhaustiva
+*Seguir un plan sobre responder al cambio
+Colaboración con el cliente sobre negociación contractual
+
+Principios Agile
+¿Cuál es el producto principal de progreso en Agile?
+Documentación completa
+*Producto funcionando
+Plan de proyecto detallado
+Backlog extenso
+
+Scrum
+¿Qué rol en Scrum representa la voz del cliente y prioriza el backlog?
+Scrum Master
+*Product Owner
+Development Team
+Stakeholder
+
+Eventos Scrum
+¿Cuál de estos NO es un evento oficial en Scrum?
+Daily Scrum
+Sprint Review
+Sprint Planning
+*Sprint Deployment
+
+Artefactos Scrum
+¿Qué es el Product Backlog en Scrum?
+Un plan de costes
+*Una lista priorizada de funcionalidades y requisitos pendientes
+Un sprint completado
+Un registro de riesgos
+
+Kanban
+¿Qué representa cada columna en un tablero Kanban típico?
+Una persona responsable
+*Un estado del flujo de trabajo (To Do, Doing, Done)
+Un sprint
+Una métrica de coste
+
+Burn-down Chart
+¿Qué muestra un burn-down chart en Agile?
+El coste incurrido hasta la fecha
+*El trabajo pendiente frente al tiempo
+El número de stakeholders
+La calidad del producto
+
+
+Redes de conmutación de circuitos
+¿Qué caracteriza a una red de conmutación de circuitos?
+*Cada comunicación sigue un camino fijo y reservado
+Los paquetes pueden seguir diferentes caminos
+Se necesita identificar origen y destino en cada paquete
+Son las redes de datos actuales
+
+Redes de conmutación de paquetes
+¿Qué caracteriza a las redes de conmutación de paquetes como TCP/IP?
+Se reserva un circuito para cada comunicación
+*Cada paquete puede recorrer caminos distintos hasta destino
+No se necesita dirección de destino en los paquetes
+Son propias solo de la telefonía
+
+Redes públicas y privadas
+¿Cuál es un ejemplo de red privada?
+La red de un operador de telefonía
+*La red interna de una empresa
+La red de Internet
+La red de telefonía móvil
+
+QoS
+¿Qué significa QoS en redes?
+Quick operation System
+*Quality of Service
+Queue of Systems
+Quantum of Signals
+
+Componentes de red
+¿Cuáles son componentes básicos de una red?
+*Dispositivos, medios de transmisión y servicios
+Solo dispositivos finales
+Protocolos y hardware
+Routers y switches
+
+Medios de transmisión
+¿Cuál de los siguientes NO es un medio físico de transmisión?
+Par de cobre
+Fibra óptica
+Radiocomunicaciones
+*Base de datos
+
+Topología estrella
+¿Qué caracteriza a la topología en estrella?
+Todos los nodos se conectan en anillo
+*Todos los nodos están conectados a un nodo central
+Todos los nodos usan un único cable compartido
+No requiere dispositivos intermedios
+
+Tecnologías de acceso
+¿Cuál de estas es una tecnología de acceso a Internet en entornos residenciales?
+Ethernet WAN
+*DSL/ADSL
+MPLS
+Frame Relay
+
+Convergencia de redes
+¿Qué implica la convergencia de redes?
+Uso de múltiples redes separadas para voz, datos y TV
+*Una única red IP que gestiona todos los tipos de tráfico
+Redes solo de voz
+Redes solo de datos
+
+Objetivos de diseño
+¿Cuál NO es un objetivo básico en el diseño de redes?
+Escalabilidad
+Control de fallos
+*Alto coste
+Seguridad
+
+Modelo OSI
+¿Cuántas capas tiene el modelo OSI?
+5
+6
+*7
+4
+
+Capa de aplicación
+¿Qué función cumple la capa de aplicación en el modelo OSI?
+Codificar señales
+Organizar diálogos y sesiones
+*Proporcionar protocolos de proceso a proceso
+Reensamblar segmentos
+
+Capa de transporte
+¿Qué función cumple la capa de transporte?
+Entregar tramas salto a salto
+*Gestionar la comunicación extremo a extremo
+Asignar direcciones físicas
+Encapsular en bits
+
+Encapsulación TCP/IP
+¿Qué hace la capa IP en el proceso de encapsulación?
+Divide los datos en segmentos
+*Añade cabecera IP con direcciones origen y destino
+Codifica bits en señales
+Gestiona la aplicación HTTP
+
+Comparación OSI y TCP/IP
+¿Cuál es una diferencia entre los modelos OSI y TCP/IP?
+TCP/IP tiene 7 capas
+OSI tiene 4 capas
+*TCP/IP combina las capas de aplicación, presentación y sesión
+TCP/IP carece de transporte
+
+Direcciones IP
+¿Cuántos bits tiene una dirección IPv4?
+16
+*32
+64
+128
+
+Direcciones IPv6
+¿Cuántos bits tiene una dirección IPv6?
+32
+64
+*128
+256
+
+Direcciones MAC
+¿De cuántos bits consta una dirección MAC?
+16
+32
+*48
+64
+
+ARP
+¿Qué función cumple el protocolo ARP?
+*Resolver direcciones IP a direcciones MAC
+Resolver dominios a direcciones IP
+Repartir ancho de banda
+Comprimir paquetes
+
+Tipos de envío
+¿Qué diferencia hay entre unicast, multicast y broadcast?
+Unicast: uno a todos; Multicast: uno a varios; Broadcast: uno a uno
+*Unicast: uno a uno; Multicast: uno a varios; Broadcast: uno a todos
+Unicast: uno a varios; Multicast: uno a todos; Broadcast: uno a uno
+Son equivalentes
+
+Ethernet
+¿En qué capas del modelo OSI opera Ethernet?
+*Enlace de datos y física
+Red y transporte
+Aplicación y presentación
+Solo en la capa de red
+
+Trama Ethernet
+¿Cuál es el tamaño mínimo de una trama Ethernet?
+32 bytes
+*64 bytes
+128 bytes
+1500 bytes
+
+Switch
+¿Qué tabla utiliza un switch para reenviar tramas?
+Tabla ARP
+Tabla de enrutamiento
+*Tabla MAC
+Tabla NAT
+
+Método store-and-forward
+¿Qué hace un switch en modo store-and-forward?
+Reenvía la trama antes de recibirla completa
+*Espera recibir la trama completa antes de reenviarla
+Solo reenvía tramas pequeñas
+Bloquea tramas duplicadas
+
+Protocolo CSMA/CD
+¿Qué ocurre si dos hosts transmiten al mismo tiempo en CSMA/CD?
+El switch bloquea las tramas
+Se ignora la colisión
+*Esperan un tiempo aleatorio antes de reintentar
+El paquete se elimina
+
+Nivel IP
+¿Qué significa que IP sea un protocolo 'best effort'?
+Garantiza entrega de paquetes
+Reordena los paquetes en destino
+*No confirma entrega ni controla el flujo
+Usa siempre QoS
+
+Cabecera IP
+¿Qué campo de la cabecera IP indica el número máximo de saltos de un paquete?
+Protocol
+*TTL (Time To Live)
+Checksum
+Flow Label
+
+Direcciones privadas
+¿Cuál de estas direcciones IP es privada?
+*192.168.1.1
+8.8.8.8
+172.15.0.1
+11.0.0.1
+
+Subnetting
+¿Cuál es la utilidad del subnetting?
+Mejorar la velocidad de transmisión
+Reducir el número de switches
+*Dividir una red en subredes más pequeñas
+Cambiar el protocolo de transporte
+
+Gateway
+¿Qué es la puerta de enlace predeterminada (default gateway)?
+*La IP de salida que permite al host comunicarse con redes externas
+El switch que conecta a Internet
+La dirección MAC del router
+La máscara de subred
+
+TCP vs UDP
+¿Qué protocolo de transporte es más rápido pero no garantiza entrega?
+TCP
+*UDP
+HTTP
+IP
+
+Handshake TCP
+¿Qué secuencia de mensajes establece una conexión TCP?
+FIN-ACK
+GET-POST
+*SYN-SYN/ACK-ACK
+REQ-RES
